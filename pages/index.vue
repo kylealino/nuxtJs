@@ -1,7 +1,7 @@
 <template>
-  <v-app>
-    <Nuxt />
-  </v-app>
+  <div>
+      <h1>LAKI ETITS KO</h1>
+  </div>
 </template>
 
 <script>
