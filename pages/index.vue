@@ -1,7 +1,9 @@
 <template>
-  <div>
-      <h1>This is home</h1>
-  </div>
+  <section class="rootContent">
+      <div class="text-center">
+          <h1>Welcome our Guest!</h1>
+      </div>
+  </section>
 </template>
 
 <script>

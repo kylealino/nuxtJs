@@ -6,13 +6,13 @@
   <v-btn plain text="normal" class="btnHome" to="/">
       HOME
   </v-btn>
-  <v-btn plain text="normal" class="btnAbout" to="/About">
+  <v-btn plain text="normal" class="btnAbout" to="/Admin/About">
       ABOUT
   </v-btn>
-  <v-btn plain text="normal" class="btnPrograms" to="/Programs">
+  <v-btn plain text="normal" class="btnPrograms" to="/Admin/Programs">
       PROGRAMS
   </v-btn>
-  <v-btn plain text="normal" class="btnLogin" to="/Login">
+  <v-btn plain text="normal" class="btnLogin" to="/Admin/Login">
       LOGIN
   </v-btn>
 
