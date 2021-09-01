@@ -1,13 +1,14 @@
 <template>
   <section class="rootContent">
 
-      <form class="bg-white centered-input  p-3 form">
+      <form @submit.prevent="submitLogin" class="bg-white centered-input  p-3 form">
           <img src="/security.png" class="Logo"  height="90" width="90"/>
           <v-text-field
               outlined
               dense
               label="email"
               height="3em" 
+              v-model="user.email"
           />
           <v-text-field
               outlined
@@ -15,10 +16,11 @@
               label="password"
               type="password"
               height="3em"
+              v-model="user.password"
                 
           />
           <div class="text-center">
-              <button class="border rounded Login">LOGIN</button>
+              <button type="submit" class="border rounded Login">LOGIN</button>
           </div>
       </form>
   </section>
@@ -26,7 +28,19 @@
 
 <script>
 export default {
-
+    data(){
+        return{
+            user:{
+                email:'',
+                password:'',
+            }
+        }
+    },
+    methods:{
+        submitLogin(){
+            alert("Login Successfully")
+        }
+    }
 }
 </script>
 
