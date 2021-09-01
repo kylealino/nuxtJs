@@ -3,19 +3,18 @@
 
   <img src="/logo.jpg" class="Logo" height="110" width="110"/>
 
-
-  <button class="btnHome">
+  <v-btn plain text="normal" class="btnHome" to="/">
       HOME
-  </button>
-  <button class="btnAbout">
+  </v-btn>
+  <v-btn plain text="normal" class="btnAbout" to="/About">
       ABOUT
-  </button>
-  <button class="btnPrograms">
+  </v-btn>
+  <v-btn plain text="normal" class="btnPrograms" to="/Programs">
       PROGRAMS
-  </button>
-  <button class="btnLogin">
+  </v-btn>
+  <v-btn plain text="normal" class="btnLogin" to="/Login">
       LOGIN
-  </button>
+  </v-btn>
 
   </nav>
 

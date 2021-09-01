@@ -2,7 +2,7 @@
   <v-app>
     <Header />
 
-    <!-- <Nuxt /> -->
+    <Nuxt class="rootContent"/>
   </v-app>
 </template>
 
@@ -20,6 +20,8 @@ export default {
   
 </script>
 
-<style>
-
+<style scoped>
+  .rootContent{
+    padding:10% 1em;
+  }
 </style>
