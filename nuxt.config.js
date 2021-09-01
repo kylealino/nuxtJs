@@ -76,6 +76,7 @@ export default {
   },
 
   serverMiddleware:[
-    '~/app.js'
+
+    '/app.js' 
   ],
 }
