@@ -1,7 +1,7 @@
 <template>
   <section class="rootContent">
       <div class="text-center">
-          <h1>Welcome to our Page</h1>
+          <h1>THIS IS ALL ABOUT US</h1>
       </div>
   </section>
 </template>
