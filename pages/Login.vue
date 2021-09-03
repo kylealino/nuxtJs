@@ -8,7 +8,6 @@
               dense
               label="email"
               height="3em" 
-              v-model="user.email"
               required
           />
           <v-text-field
@@ -16,8 +15,7 @@
               dense
               label="password"
               type="password"
-              height="3em"
-              v-model="user.password"
+              height="3em"  
               required
                 
           />
