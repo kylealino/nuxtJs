@@ -1,6 +1,9 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  env: {
+    baseUrl: 'http://localhost:3000'
+  },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -29,6 +32,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/axios'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -38,33 +42,42 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    // '@nuxtjs/axios'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/auth-next',
+    // '@nuxtjs/auth-next',
+    // '@nuxtjs/axios'
   ],
-  auth:{
-    strategies: {
-      local: {
-        token: {
-          property: 'token',
-          global: true,
-          // required: true,
-          // type: 'Bearer'
-        },
-        user: {
-          property: 'user',
-          // autoFetch: true
-        },
-        endpoints: {
-          login: { url: '/api/auth/login', method: 'post' },
-          logout: { url: '/api/auth/logout', method: 'post' },
-          user: { url: '/api/auth/user', method: 'get' }
-        }
-      }
-    }
-  },
+  // auth:{
+  //   strategies: {
+  //     local: {
+  //       token: {
+  //         property: 'token',
+  //         global: true,
+  //         // required: true,
+  //         // type: 'Bearer'
+  //       },
+  //       user: {
+  //         property: 'user',
+  //         // autoFetch: true
+  //       },
+  //       endpoints: {
+  //         Login: { url: '/api/auth/login', method: 'post' },
+  //         logout: { url: '/api/auth/logout', method: 'post' },
+  //         user: { url: '/api/auth/user', method: 'get' }
+  //       }
+  //     }
+  //   }
+  // },
+
+  // axios:{
+  //   baseUrl:'https://jsonplaceholder.typicode.com/todos/1',
+  //   confidentials:true,
+  // },
+ 
+ 
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -76,7 +89,6 @@ export default {
   },
 
   serverMiddleware:[
-
-    '/app.js' 
+    '~/app.js' 
   ],
 }

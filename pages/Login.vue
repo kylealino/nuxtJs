@@ -9,6 +9,7 @@
               label="email"
               height="3em" 
               v-model="user.email"
+              required
           />
           <v-text-field
               outlined
@@ -17,6 +18,7 @@
               type="password"
               height="3em"
               v-model="user.password"
+              required
                 
           />
           <div class="text-center">
@@ -28,19 +30,19 @@
 
 <script>
 export default {
-    data(){
-        return{
-            user:{
-                email:'',
-                password:'',
-            }
-        }
-    },
-    methods:{
-        submitLogin(){
-            alert("Login Successfully")
-        }
-    }
+    // data(){
+    //     return{
+    //         user:{
+    //             email:'',
+    //             password:'',
+    //         }
+    //     }
+    // },
+    // methods:{
+    //     async submitLogin(){
+    //         let response = await this.$axios.post('http://localhost:3000/api/auth/login', this.user)
+    //     }
+    // }
 }
 </script>
 
