@@ -1,6 +1,5 @@
 <template>
   <section class="rootContent">
-
       <form @submit.prevent="submitLogin" class="bg-white centered-input  p-3 form">
           <img src="/security.png" class="Logo"  height="90" width="90"/>
           <v-text-field

@@ -23,5 +23,6 @@ export default {
 <style scoped>
   .rootContent{
     padding:10% 1em;
+    font-style: roboto;
   }
 </style>

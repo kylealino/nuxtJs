@@ -1,5 +1,7 @@
 <template>
+
   <section class="rootContent">
+    
       <div class="text-center">
           <h2>Online and On-Campus Enrollment for College Freshmen <br>for Second Term is now open</h2>
           <br>

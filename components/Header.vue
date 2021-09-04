@@ -35,6 +35,7 @@ export default {
         left: 0;
         background-color:white;
         color:black;
+        font-style: roboto;
 
     }
     button{

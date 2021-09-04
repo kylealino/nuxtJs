@@ -69,6 +69,9 @@ export default {
 </script>
 
 <style scoped>
+    section{
+        font-style: roboto;
+    }
     div{
         font-size: 12px;
         margin-left: 20em;
@@ -109,6 +112,7 @@ export default {
         justify-content: center;
         align-items: center;
         margin-bottom: 0;
+        font-weight: 700;
     }
     .lbl2{
         display: flex;
